@@ -1,4 +1,4 @@
-f**SOC Incident Report Team 2**
+**SOC Incident Report**
 
 #  Executive Summary
 
