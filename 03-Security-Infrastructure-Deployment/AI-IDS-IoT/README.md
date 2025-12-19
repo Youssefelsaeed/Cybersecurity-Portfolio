@@ -272,7 +272,7 @@ Implementation:
 - Here's a screenshot of the CSVs after extracting the dataset:
 
   - ![A screenshot of a clock AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\AI-IDS-IoT\images/media/image1.png){width="7.067279090113736in"
+    incorrect.](images/media/image1.png){width="7.067279090113736in"
     height="1.0000863954505688in"}
 
   - DNN-EdgeIIoT-dataset.csv: It contains more data and features than
@@ -360,15 +360,15 @@ we can run into our conclusion and metrics:
 System Evaluation:
 
 ![A black screen with white text AI-generated content may be
-incorrect.](03-Security-Infrastructure-Deployment\AI-IDS-IoT\images/media/image2.png){width="7.5in"
+incorrect.](images/media/image2.png){width="7.5in"
 height="1.9944444444444445in"}
 
 Overview:![A screenshot of a computer AI-generated content may be
-incorrect.](03-Security-Infrastructure-Deployment\AI-IDS-IoT\images/media/image3.png){width="7.5in"
+incorrect.](images/media/image3.png){width="7.5in"
 height="6.65625in"}
 
 ![A screenshot of a calendar AI-generated content may be
-incorrect.](03-Security-Infrastructure-Deployment\AI-IDS-IoT\images/media/image4.png){width="7.5in"
+incorrect.](images/media/image4.png){width="7.5in"
 height="3.68125in"}
 
 A. System Performance Overview
@@ -376,7 +376,7 @@ A. System Performance Overview
 - Final Test Accuracy: 94.42%
 
   - ![A black background with white text AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\AI-IDS-IoT\images/media/image5.png){width="7.5in"
+    incorrect.](images/media/image5.png){width="7.5in"
     height="1.4590277777777778in"}
 
 - Loss: 0.1403 (Low loss indicates the model is stable and confident).
