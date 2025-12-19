@@ -49,6 +49,7 @@ Cybersecurity-Portfolio/
 ### ⚔️ Penetration Testing
 - **[Metasploitable 2 Assessment](02-Vulnerability-Assessment-Pentest/Metaspolitable-2-Assessment/)** - Comprehensive vulnerability assessment
 - **[Saturn Security Internal Pentest](02-Vulnerability-Assessment-Pentest/Saturn-Security-Internal-Pentest/)** - Internal network penetration test
+- **[Buffer OverFlow Lab](02-Vulnerability-Assessment-Pentest/Buffer-Overflow-Lab/)** - Buffer OverFlow Vulnerability Study and Application
 
 ### 🛡️ Security Infrastructure
 - **[ELK Stack SIEM Deployment](03-Security-Infrastructure-Deployment/SIEM-ELK-Stack-Deployment/)** - Full SIEM implementation
@@ -56,11 +57,13 @@ Cybersecurity-Portfolio/
 - **[NGINX WAF with ModSecurity](03-Security-Infrastructure-Deployment/NGINX-ModSecurity-WAF/)** - Web application firewall deployment
 - **[MISP Threat Intelligence Deployment](03-Security-Infrastructure-Deployment/MISP-Threat-Intelligence-Deployment/)** - Threat Intel Platform Deplyoment
 - **[WordPress Security Hardening](03-Security-Infrastructure-Deployment/WordPress-Hardening-Wordfence/)** - WordPress Security Hardening Using WordFence
+- **[FTP Server Security Lab](03-Security-Infrastructure-Deployment/FTP-Server-Security-Lab/)** - FTP Server Initialization, Security Practice
+- **[AI IDS IOT_Networks](03-Security-Infrastructure-Deployment/AI-IDS-IoT/)** - AI-Based IDPS For IOT Networks
 
 ## 🛠️ Technical Skills
 
 **Programming/Scripting:** Bash, Python, PowerShell
-**Security Tools:** Wireshark, Metasploit, Nmap, Burp Suite, SNORT, ELK Stack, MISP
+**Security Tools:** Wireshark, Metasploit, Nmap, Burp Suite, SNORT, ELK Stack, MISP, AI
 **Platforms:** Linux, Windows, Kubernetes, Docker
 **Methodologies:** OWASP, NIST CSF, MITRE ATT&CK
 
