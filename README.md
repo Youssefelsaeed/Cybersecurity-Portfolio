@@ -54,11 +54,13 @@ Cybersecurity-Portfolio/
 - **[ELK Stack SIEM Deployment](03-Security-Infrastructure-Deployment/SIEM-ELK-Stack-Deployment/)** - Full SIEM implementation
 - **[SNORT IDS/IPS Configuration](03-Security-Infrastructure-Deployment/IDS-IPS-SNORT-Configuration/)** - Network monitoring setup
 - **[NGINX WAF with ModSecurity](03-Security-Infrastructure-Deployment/NGINX-ModSecurity-WAF/)** - Web application firewall deployment
+- **[MISP Threat Intelligence Deployment](03-Security-Infrastructure-Deployment/MISP-Threat-Intelligence-Deployment/)** - Threat Intel Platform Deplyoment
+- **[WordPress Security Hardening](03-Security-Infrastructure-Deployment/WordPress-Hardening-Wordfence/)** - WordPress Security Hardening Using WordFence
 
 ## 🛠️ Technical Skills
 
 **Programming/Scripting:** Bash, Python, PowerShell
-**Security Tools:** Wireshark, Metasploit, Nmap, Burp Suite, SNORT, ELK Stack
+**Security Tools:** Wireshark, Metasploit, Nmap, Burp Suite, SNORT, ELK Stack, MISP
 **Platforms:** Linux, Windows, Kubernetes, Docker
 **Methodologies:** OWASP, NIST CSF, MITRE ATT&CK
 
