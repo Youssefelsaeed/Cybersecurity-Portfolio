@@ -61,31 +61,28 @@ Now let's roll to our First task setting up the FTP server:
   talked about it so we did run the sudo apt command:
 
   - ![A purple and white background AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image1.png){width="5.725496500437445in"
-    height="0.8500732720909886in"}
+    incorrect.](images/media/image1.png)
 
 - Now after the installation is finished we would need to create an ftp
   user for the test:
 
   - ![A screenshot of a computer program AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image2.png){width="5.683825459317585in"
-    height="2.975258092738408in"}
+    incorrect.](images/media/image2.png)
 
   - Added the user, changed only the name and left all the other details
     as default.
 
 - Now creating the test file before configuration:
 
-  - ![](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image3.png){width="6.5in"
-    height="0.4625in"}
+  - ![](images/media/image3.png)
 
-  - ![](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image4.png){width="6.5in"
+  - ![](images/media/image4.png){width="6.5in"
     height="0.5in"}
 
 - Now to the most important part which is configuring VSFTPD, the config
   file is in the /etc:
 
-  - ![](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image5.png){width="6.233873578302712in"
+  - ![](images/media/image5.png){width="6.233873578302712in"
     height="0.6500568678915135in"}
 
   - As I searched for the needed configuration it looks like we need the
@@ -97,7 +94,7 @@ Now let's roll to our First task setting up the FTP server:
 
     - Disable anonymous login (security) (not important now) (Default is
       no)![A screenshot of a computer error AI-generated content may be
-      incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image6.png){width="4.750411198600175in"
+      incorrect.](images/media/image6.png){width="4.750411198600175in"
       height="1.4167891513560804in"}
 
     - Restrict users to their home directory (security) (not important
@@ -108,7 +105,7 @@ Now let's roll to our First task setting up the FTP server:
     - For the active and passive analysis we would want to set the
       passive mode settings (used for firewalls) ![A screenshot of a
       computer AI-generated content may be
-      incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image7.png){width="5.100441819772528in"
+      incorrect.](images/media/image7.png){width="5.100441819772528in"
       height="4.108689851268592in"}
 
 - Now (assuming that we have the firewall enabled but actually it's
@@ -119,12 +116,12 @@ Now let's roll to our First task setting up the FTP server:
     just set 40000/50000, and allow the secure FTPS port 990 as required
     in the test.
 
-  - ![](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image8.png){width="5.7171620734908135in"
+  - ![](images/media/image8.png){width="5.7171620734908135in"
     height="2.083513779527559in"}
 
 - Restarted the service and now checking the status: ![A computer screen
   with white text AI-generated content may be
-  incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image9.png){width="6.308880139982502in"
+  incorrect.](images/media/image9.png){width="6.308880139982502in"
   height="2.483548775153106in"}
 
 Now the second task which is connecting and transferring files:
@@ -148,22 +145,22 @@ Now the second task which is connecting and transferring files:
   new site called ubuntu, enter my ip addr of the ubuntu machine and the
   user and password of my user created: ![A screenshot of a computer
   AI-generated content may be
-  incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image10.png){width="6.5in"
+  incorrect.](images/media/image10.png){width="6.5in"
   height="4.904166666666667in"}
 
 - Logged in successfully : ![A white background with black and white
   clouds AI-generated content may be
-  incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image11.png){width="6.5in"
+  incorrect.](images/media/image11.png){width="6.5in"
   height="1.0902777777777777in"}
 
 - listing of the files: ![A screenshot of a computer AI-generated
   content may be
-  incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image12.png){width="4.775413385826772in"
+  incorrect.](images/media/image12.png){width="4.775413385826772in"
   height="3.058597987751531in"}
 
 - Test upload and download: ![A screenshot of a computer AI-generated
   content may be
-  incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image13.png){width="6.5in"
+  incorrect.](images/media/image13.png){width="6.5in"
   height="1.8763888888888889in"}
 
 - great we are now connected and files is transferring brightly, just
@@ -181,8 +178,7 @@ wireshark:
 - Look at the interesting results found on the capture screen using ftp
   filter then ftp \|\| ftp-data: ![A screenshot of a computer
   AI-generated content may be
-  incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image14.png){width="6.5in"
-  height="2.7534722222222223in"}
+  incorrect.](images/media/image14.png)
 
 - And yes ive changed the username to ftpuser after having some problems
   upthere connecting with filezilla and repeated some steps about
@@ -197,30 +193,26 @@ wireshark:
 - Let's focus on our capture results which shows password and user as
   plain text, the file path, literally the file was exportable using
   wireshark: ![A screenshot of a computer AI-generated content may be
-  incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image15.png){width="6.5in"
-  height="2.665277777777778in"}
-
+  incorrect.](images/media/image15.png)
 - Noticed the binary mode that was used by vsftpd in order to download
   the file:
 
   - ![A screen shot of a computer AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image16.png){width="6.5in"
-    height="1.1368055555555556in"}
+    incorrect.](images/media/image16.png)
 
 Now let's dive to task 4 which is securing our FTP server with ssl/tls
 
 - Now to work securely we would need an ssl certificate, searched and
   found out a command to generate a certificate for a year:
 
-  - ![](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image17.png){width="6.100528215223097in"
+  - ![](images/media/image17.png){width="6.100528215223097in"
     height="0.6917268153980752in"}
 
 - Now to our config file and let's enable ssl because it's disabled by
   default, give the path of our created cert, disable any old ssl
   versions and enable tls.
 
-  - ![](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image18.png){width="5.767166447944007in"
-    height="4.142025371828521in"}
+  - ![](images/media/image18.png)
 
 - Also used the force_login and force_data to YES to force control over
   ssl for the test.
@@ -230,20 +222,18 @@ Now let's dive to task 4 which is securing our FTP server with ssl/tls
 - Changed only the cnryption on the site manager:
 
   - ![A screenshot of a computer AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image19.png){width="5.475474628171479in"
-    height="2.516884295713036in"}
+    incorrect.](images/media/image19.png)
 
 - And now we'll connect:
 
   - ![A screenshot of a computer AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image20.png){width="6.5in"
-    height="2.5770833333333334in"}
+    incorrect.](images/media/image20.png)
 
   - Hurrayyyyy succeeded.
 
 - Now let's analyze the traffic but with encrypted traffic this time:
   ![A screenshot of a computer AI-generated content may be
-  incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image21.png){width="6.5in"
+  incorrect.](images/media/image21.png){width="6.5in"
   height="2.2472222222222222in"}
 
 - Now we can view clearly that there is no chance of comparison, here we
@@ -256,7 +246,7 @@ Now let's dive to task 4 which is securing our FTP server with ssl/tls
   download and upload:
 
   - ![A screenshot of a computer AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image22.png){width="6.5in"
+    incorrect.](images/media/image22.png){width="6.5in"
     height="3.348611111111111in"}
 
 - That application data is our encrypted file transfer, as shown the
@@ -264,7 +254,7 @@ Now let's dive to task 4 which is securing our FTP server with ssl/tls
   packet header itself:
 
   - ![A screenshot of a computer AI-generated content may be
-    incorrect.](03-Security-Infrastructure-Deployment\FTP-Server-Security-Lab\images/media/image23.png){width="6.5in"
+    incorrect.](images/media/image23.png){width="6.5in"
     height="2.2194444444444446in"}
 
 - Now we are done with our test, loads of lessons learnt actually thanks
