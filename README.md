@@ -50,6 +50,7 @@ Cybersecurity-Portfolio/
 - **[Metasploitable 2 Assessment](02-Vulnerability-Assessment-Pentest/Metaspolitable-2-Assessment/)** - Comprehensive vulnerability assessment
 - **[Saturn Security Internal Pentest](02-Vulnerability-Assessment-Pentest/Saturn-Security-Internal-Pentest/)** - Internal network penetration test
 - **[Buffer OverFlow Lab](02-Vulnerability-Assessment-Pentest/Buffer-Overflow-Lab/)** - Buffer OverFlow Vulnerability Study and Application
+- **[Metasploitable 2 30 Exploits](02-Vulnerability-Assessment-Pentest/Metasploitable-2-Heavy-Professional-Assessment/)** - Heavy Penetration Test Activity 30 Exploits
 
 ### 🛡️ Security Infrastructure
 - **[ELK Stack SIEM Deployment](03-Security-Infrastructure-Deployment/SIEM-ELK-Stack-Deployment/)** - Full SIEM implementation
